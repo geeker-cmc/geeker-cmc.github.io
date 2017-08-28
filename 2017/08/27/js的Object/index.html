@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="viewport  手机浏览器把网页放在虚拟窗口中，这个虚拟窗口就是viewport。窗口可大于或小于手机可视区域，一般大于手机可视区。这样可以通过滚动条查看超出部分的内容。以iphone6为例，在没有设置viewport的情况下，移动端的浏览器的宽度为980px，但是其实视图窗口为375，所以要是不设置viewport的情况下，会让文字和图片看起来很小，iphone6的devicePixelRa">
+<meta name="description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。  对象的基本操作 对对象的操作可以理解为对对象属性的操作，对象的用法包括创建（create）、设置（set）、查找（query）、删除（delete）、检测（test）和枚举（enumerate）属性。属">
 <meta name="keywords" content="javaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="viewport">
-<meta property="og:url" content="http://yoursite.com/2017/07/05/viewport/index.html">
+<meta property="og:title" content="js的Object">
+<meta property="og:url" content="http://yoursite.com/2017/08/27/js的Object/index.html">
 <meta property="og:site_name" content="geeker-cmc">
-<meta property="og:description" content="viewport  手机浏览器把网页放在虚拟窗口中，这个虚拟窗口就是viewport。窗口可大于或小于手机可视区域，一般大于手机可视区。这样可以通过滚动条查看超出部分的内容。以iphone6为例，在没有设置viewport的情况下，移动端的浏览器的宽度为980px，但是其实视图窗口为375，所以要是不设置viewport的情况下，会让文字和图片看起来很小，iphone6的devicePixelRa">
-<meta property="og:updated_time" content="2017-08-27T11:15:49.451Z">
+<meta property="og:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。  对象的基本操作 对对象的操作可以理解为对对象属性的操作，对象的用法包括创建（create）、设置（set）、查找（query）、删除（delete）、检测（test）和枚举（enumerate）属性。属">
+<meta property="og:updated_time" content="2017-08-28T13:46:45.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="viewport">
-<meta name="twitter:description" content="viewport  手机浏览器把网页放在虚拟窗口中，这个虚拟窗口就是viewport。窗口可大于或小于手机可视区域，一般大于手机可视区。这样可以通过滚动条查看超出部分的内容。以iphone6为例，在没有设置viewport的情况下，移动端的浏览器的宽度为980px，但是其实视图窗口为375，所以要是不设置viewport的情况下，会让文字和图片看起来很小，iphone6的devicePixelRa">
+<meta name="twitter:title" content="js的Object">
+<meta name="twitter:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。  对象的基本操作 对对象的操作可以理解为对对象属性的操作，对象的用法包括创建（create）、设置（set）、查找（query）、删除（delete）、检测（test）和枚举（enumerate）属性。属">
 
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/05/viewport/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/27/js的Object/"/>
 
 
 
 
 
-  <title>viewport | geeker-cmc</title>
+  <title>js的Object | geeker-cmc</title>
   
 
 
@@ -256,7 +256,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/05/viewport/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/27/js的Object/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="geeker-cmc">
@@ -273,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">viewport</h1>
+          <h1 class="post-title" itemprop="name headline">js的Object</h1>
         
 
         <div class="post-meta">
@@ -285,8 +285,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-05T22:18:29+08:00">
-                2017-07-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-27T19:14:16+08:00">
+                2017-08-27
               </time>
             
 
@@ -323,8 +323,16 @@
       
 
       
-        <h1 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h1><blockquote>
-<p> 手机浏览器把网页放在虚拟窗口中，这个虚拟窗口就是viewport。窗口可大于或小于手机可视区域，一般大于手机可视区。这样可以通过滚动条查看超出部分的内容。以iphone6为例，在没有设置viewport的情况下，移动端的浏览器的宽度为980px，但是其实视图窗口为375，所以要是不设置viewport的情况下，会让文字和图片看起来很小，iphone6的devicePixelRatio为2，就是物理像素和视图窗口的比。此时设置<meta name="view" content="width=device-width">此时css中的1px就相当于视图窗口的1px，屏幕的总宽度为375px。</p>
+        <h1 id="javaScript的Object总结"><a href="#javaScript的Object总结" class="headerlink" title="javaScript的Object总结"></a>javaScript的Object总结</h1><h3 id="对象的定义"><a href="#对象的定义" class="headerlink" title="对象的定义"></a>对象的定义</h3><blockquote>
+<p>对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。</p>
+</blockquote>
+<h3 id="对象的基本操作"><a href="#对象的基本操作" class="headerlink" title="对象的基本操作"></a>对象的基本操作</h3><blockquote>
+<p>对对象的操作可以理解为对对象属性的操作，对象的用法包括创建（create）、设置（set）、查找（query）、删除（delete）、检测（test）和枚举（enumerate）属性。属性名可以是包含空字符串在内的任意字符串。值可以是任意的类型，或者一个getter或setter函数。每个属性都有自身的特性：</p>
+<ul>
+<li>可写（writable attribute），是否可设置该属性的值。</li>
+<li>可枚举（enumerable attribute）,表明是否可以通过for/in循环。</li>
+<li>可配置（configurable attribute），是否可以删除或修改该属性。</li>
+</ul>
 </blockquote>
 
       
@@ -356,15 +364,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/05/viewport/" rel="next" title="viewport">
+                <i class="fa fa-chevron-left"></i> viewport
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/27/js的Object/" rel="prev" title="js的Object">
-                js的Object <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -489,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#viewport"><span class="nav-number">1.</span> <span class="nav-text">viewport</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#javaScript的Object总结"><span class="nav-number">1.</span> <span class="nav-text">javaScript的Object总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的定义"><span class="nav-number">1.0.1.</span> <span class="nav-text">对象的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的基本操作"><span class="nav-number">1.0.2.</span> <span class="nav-text">对象的基本操作</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
