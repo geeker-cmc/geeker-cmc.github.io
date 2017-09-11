@@ -101,7 +101,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/27/js的Object/index.html">
 <meta property="og:site_name" content="geeker-cmc">
 <meta property="og:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。">
-<meta property="og:updated_time" content="2017-09-06T15:12:54.466Z">
+<meta property="og:updated_time" content="2017-09-11T14:28:20.250Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js的Object">
 <meta name="twitter:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。">
@@ -396,9 +396,14 @@
 <ul>
 <li>类属性</li>
 </ul>
+<p>对象的类属型属性是一个字符串，表示对象的类型信息。只有一种方法能够查询到对象的类属性（Object.prototype.toString），返回’[object Class]’。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function classof(o)&#123;</div><div class="line">    if(o === null) return &apos;Null&apos;</div><div class="line">    if(o === undefined) return &apos;Undefined&apos;</div><div class="line">    return Object.prototype.toString.call(o).slice(8,-1)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>可拓展性</li>
 </ul>
+<p>对象的可拓展性表示是否可以给对象添加性的属性，所有的内置对象和自定义对象都是可拓展的。判断对象是否可以拓展可以用Object.isExtensible()，设置对象的课拓展性可以用Object.preventExtensions()，参数为要设置的对象。</p>
+<p>```<br>var person = {userName:’lili’}<br>Object.isExtensible(person);<br>//返回true，对象可拓展<br>Object.preventExtensions(person);<br>//返回false，当对象不可拓展时，就无法为对像添加属性。、</p>
+<p>``</p>
 
       
     </div>
