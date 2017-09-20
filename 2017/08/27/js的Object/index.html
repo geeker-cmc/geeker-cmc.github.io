@@ -101,7 +101,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/27/js的Object/index.html">
 <meta property="og:site_name" content="geeker-cmc">
 <meta property="og:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。">
-<meta property="og:updated_time" content="2017-09-11T14:28:20.250Z">
+<meta property="og:updated_time" content="2017-09-13T14:14:49.941Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js的Object">
 <meta name="twitter:description" content="javaScript的Object总结对象的定义 对象是一种复合值，将多个值以键值对的形式保存，可以通过名字访问值，也可以看做是属性的无序集合。除了可以保有自身的属性，还可以从原型对象继承属性。">
@@ -379,7 +379,7 @@
 <ul>
 <li>getOwnPropertyDescriptor()，获取属性的特性，该静态方法的第一个参数为对象，第二个为对象的自有属性，针对自有属性操作，无法针对继承属性。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var obj = &#123;userName:&apos;lili&apos;&#125;;</div><div class="line">Object.getOwnPropertyDescriptor(obj,&apos;userName&apos;);</div><div class="line">&#123;enumerable:true,writable:true,configurable:true&#125;//返回该属性的三个特性</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var obj = &#123;userName:&apos;lili&apos;&#125;;</div><div class="line">Object.getOwnPropertyDescriptor(obj,&apos;userName&apos;);</div><div class="line">&#123;enumerable:true,writable:true,configurable:true,value:&apos;lili&apos;&#125;//返回该属性的三个特性</div><div class="line">Object.defineProperty(obj,&apos;age&apos;,&#123;</div><div class="line">     set(age)&#123;</div><div class="line">         this.userName = age</div><div class="line">        &#125;,</div><div class="line">      get()&#123;</div><div class="line">        return this.userName</div><div class="line">      &#125;</div><div class="line">    &#125;)</div><div class="line">Object.getOwnPropertyDescriptor(obj,&apos;age&apos;);</div><div class="line">&#123;enumerable: false, configurable: false&#125;//返回两个特性</div></pre></td></tr></table></figure>
 <ul>
 <li>defineProperty()，设置对象的属性，并配置对象的特性，三个参数，第一个为要配置的对象，第二个为配置的属性，第三个为配置的特性。</li>
 </ul>
@@ -402,8 +402,7 @@
 <li>可拓展性</li>
 </ul>
 <p>对象的可拓展性表示是否可以给对象添加性的属性，所有的内置对象和自定义对象都是可拓展的。判断对象是否可以拓展可以用Object.isExtensible()，设置对象的课拓展性可以用Object.preventExtensions()，参数为要设置的对象。</p>
-<p>```<br>var person = {userName:’lili’}<br>Object.isExtensible(person);<br>//返回true，对象可拓展<br>Object.preventExtensions(person);<br>//返回false，当对象不可拓展时，就无法为对像添加属性。、</p>
-<p>``</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var person = &#123;userName:&apos;lili&apos;&#125;</div><div class="line">Object.isExtensible(person);</div><div class="line">//返回true，对象可拓展</div><div class="line">Object.preventExtensions(person);</div><div class="line">//返回false，当对象不可拓展时，就无法为对像添加属性。、</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -443,6 +442,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/13/ES6总结/" rel="prev" title="ES6总结">
+                ES6总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -519,7 +522,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
